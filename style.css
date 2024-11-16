@@ -1,0 +1,698 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+}
+body{
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+#click{
+    display: none;
+}
+
+
+/* Hero Section */
+
+.hero{
+    height:100%;
+    width: 100%;
+    background: url(/img/banner-bg.png) no-repeat center center/cover;
+    
+}
+
+
+.hero .navbar{
+    padding:20px 80px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.hero .navbar img{
+    z-index: 20;
+}
+.hero .navbar .show{
+    display: flex;
+    gap:30px;
+    z-index: 20;
+}
+.hero .navbar .show .te{
+    text-decoration: none;
+}
+.hero .navbar .show a{
+    
+    color: white;
+    font-size: 25px;
+    
+}
+
+
+
+.hero .navbar .show label{
+    color:white;
+    font-size: 25px;
+    
+}
+
+
+.hero .main .menu{
+    display: none;
+    border: transparent;
+    border-radius: 25px;
+}
+
+.hero .main .menu li{
+    
+    list-style: none;
+}
+.hero .main  .menu li a{
+    text-decoration: none;
+    padding-bottom:7px;
+    color: white;
+    font-size: 30px;
+    
+}
+.hero .main .menu li a:hover{
+    color:#89cbeb;
+}
+
+#click:checked ~ .hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 3;
+  }
+  #click:checked ~ .hero .main .menu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position:absolute;
+    z-index: 20;
+    padding: 20px;
+
+    
+  }
+
+
+.hero .main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    gap:40px;
+    width: 100%;
+    height: 80vh;
+
+}
+.hero .main .content{
+    display: flex;
+    flex-direction: column;
+
+    
+}
+.hero .main .content h2{
+    font-size: 45px;
+    color: black;
+    padding:0 0 20px;
+}
+.hero .main .content h1{
+    font-size: 60px;
+    color:white;
+    padding:0 0 20px;
+}
+.hero .main .content p{
+    font-size: 15px;
+    color: white;
+    padding:0 0 20px;
+}
+.hero .main .content a{
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+    padding:10px 0px;
+}
+
+
+
+
+.hero .main .img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.hero .main .img img{
+    width:70%;
+}
+
+
+/* Services */
+#services{
+    padding:90px 0px;
+    width:100%;
+}
+#services .h1{
+    font-size: 60px;
+    padding-left: 65px;
+}
+#services .h1 span{
+    color:#89cbeb;
+}
+#services .p{
+    padding:30px 65px ;
+
+}
+
+#services .ser{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    padding:0px 100px;
+    gap:50px;
+}
+
+#services .ser .comm{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border:1px solid #89cbeb;
+    border-radius: 10px;
+    
+    
+}
+
+#services .ser .comm img{
+    padding:20px 0px;
+}
+
+#services .ser .comm h1{
+    font-size: 30px;
+    padding:20px;
+}
+#services .ser .comm p{
+    font-size:18px;
+    padding:20px;
+}
+
+#services .ser .ser1{
+    background-color:#89cbeb ;
+    color:white;
+}
+
+#services .ser .ser2:hover{
+    background-color:#89cbeb ;
+    color:white;
+}
+
+
+/* About */
+.about{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:#d7f0fd ;
+    padding:60px;
+    
+    gap:20px;
+}
+
+.about .abcon{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    text-align: left;
+}
+.about .abcon h1{
+    font-size: 60px;
+    padding-left:50px;
+}
+.about .abcon h1 span{
+    color:#89cbeb;
+}
+.about .abcon p{
+    padding:30px 50px ;
+
+}
+.about .abcon a{
+    padding-left: 50px;
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+
+
+}
+
+
+/* Choose */
+.choose{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding:90px 0px;
+    
+}
+.choose .head h1{
+    font-size: 60px;
+    padding-bottom: 10px;
+}
+.choose .head h1 span{
+    color:#89cbeb;
+}
+.choose .head p{
+    padding:30px 0px ;
+    
+
+}
+
+.choose .info{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 80px;
+    
+
+}
+.choose .info .same{
+    border: 2px solid #90ceec;
+    width: 100%;
+    padding:20px 40px;
+    transition: all 1s;
+}
+
+.choose .info .same:hover{
+    transform:scale(1.2);
+    border-radius: 10px;
+    
+
+}
+
+.choose .info .same h1{
+    width: 100%;
+    font-size: 50px;
+    color: #90ceec;
+    text-align: center;
+    font-weight: 700;
+    
+}
+.choose .info .same p{
+    
+    font-size: 20px;
+    text-align: center;
+    padding-top:10px;
+}
+
+.choose button{
+    font-size: 16px;
+    background-color: black;
+    color: white;
+    padding:15px 25px;
+    border: transparent;
+    border-radius:25px;
+
+    
+}
+
+
+/* Team */
+.team{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+   
+}
+.team .head h1{
+    font-size: 60px;
+    padding-bottom: 30px;
+}
+.team .head h1 span{
+    color:#89cbeb;
+}
+ .head p{
+    color:black; 
+
+}
+
+.team .workers{
+    padding:90px 0px;
+    width: 100%;
+}
+.team .workers .member{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+
+    gap:80px;
+}
+
+
+.team  .workers .member1 {
+    
+    flex-wrap: wrap;
+}
+.team .workers .member2 {
+    
+    flex-wrap: wrap-reverse;
+}
+
+
+.team .workers .member1 .cont{
+    text-align: left;
+    padding:20px;
+}
+.team .workers .member2 .cont{
+    text-align: right;
+    padding:20px;
+}
+
+.team .workers .member .cont h1{
+    padding:20px 0px;
+}
+
+.team .workers .member .logo p{
+    color:#89cbeb;
+    padding:10px 0px;
+    width: 100%;
+    font-size: 18px;
+}
+.team .workers .member .logo a{
+    color:#89cbeb;
+    padding:0px 8px;
+   
+    font-size: 25px;
+    
+}
+
+
+/* Newsletter */
+.newsletter{
+    background-color: #89cbeb;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 40px 0px;
+}
+
+.newsletter .cont h1{
+    color:white;
+    font-size: 40px;
+    padding: 10px 0px;
+}
+.newsletter .cont p{
+    color:white;
+    font-size: 16px;
+    padding: 10px 0px;
+}
+
+
+
+.newsletter .subscribe input[type="email"]{
+    width:270px;
+    font-size:16px;
+    border: transparent;
+    padding:10px 15px;
+    
+    
+}
+.newsletter .subscribe input[type="submit"]{
+    text-align: center;
+    background-color: black;
+    color:white;
+    border: transparent;
+    font-size:16px;
+    padding:10px 15px;
+    position: absolute;
+    
+}
+
+
+/* Contact */
+.contact{
+    background-color:  #282828;
+    color:white;
+    padding:45px;
+    width: 100%;
+}
+
+.contact .details{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contact .details h1 {
+    font-size:30px;
+    padding-bottom:10px;
+    
+
+}
+
+.contact .details a{
+    color:white;
+    text-decoration: none;
+    font-size: 24px;
+    
+}
+.contact .details a i{
+    padding-right: 10px;
+}
+
+.contact .main {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.contact .main .form{
+   
+   width: 100%;
+   
+}
+.contact .main .form input{
+   
+    width: 70%;
+    font-size: 18px;
+    color: #ffffff;
+    background-color: transparent;
+    border:0;
+    border-bottom: 2px solid #fffcfc ;
+    
+    padding: 20px 15px 10px 15px;
+ }
+ .contact .main .form textarea{
+   
+    width: 70%;
+    font-size: 18px;
+    color: #ffffff;
+    background-color: transparent;
+    border:0;
+    border-bottom: 2px solid #fffcfc ;
+    
+    padding: 20px 15px 10px 15px;
+ }
+
+ .contact .main .form button{
+    background-color: #89cbeb;
+    color: white;
+    padding:5px 15px;
+    border:transparent;
+    border-radius: 25px;
+    font-size: 20px;
+ }
+
+.contact .main .map{
+    width: 100%;
+    padding:40px;
+}
+
+.contact .main .map .icons{
+    width: 100%;
+    padding:20px 50px 0px 0px;
+    display: flex;
+    justify-content: flex-end;
+    gap:25px;
+    
+
+
+}
+.contact .main .map .icons a{
+    color:white;
+    font-size: 25px;
+}
+
+
+/* Responsive 768px */
+
+@media screen and (max-width:768px){
+    .hero .main{
+        flex-direction: column;
+        height: 150vh;
+    }
+    #click:checked ~ .hero::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 170vh;
+        background: rgba(0, 0, 0, 0.8);
+      }
+    .about{
+        flex-direction: column-reverse;
+    }
+    .about .abimg{
+        width: 80%;
+    }
+
+
+
+    .choose .info{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .choose .none{
+        display: none;
+    }
+
+    .team .workers .member{
+        padding:0px 10px;
+        justify-content: center;
+        align-items: center;
+        gap:0px;
+        margin-bottom: 40px;
+    }
+    .team .workers .member .cont h1{
+        padding:10px 0px;
+    }
+
+
+    .newsletter{
+        flex-direction: column;
+    }
+    .newsletter .subscribe input[type="submit"]{
+        position: relative;
+    }
+
+
+
+    .contact .details{
+        grid-template-columns: repeat(2,1fr);
+        
+    }
+    .contact .details .direct{
+        padding-top:20px;
+    }
+    .contact .main{
+        flex-direction: column;
+        padding:20px 0px;
+        align-items: center;
+    }
+    .contact .main .map{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+        
+    }
+    .contact .main .map .icons{
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width:426px){
+
+    .hero .navbar{
+        padding:20px 30px;
+    }
+    .hero .navbar .show .te{
+        display: none;
+    }
+
+    .hero .main .content{
+        padding-left:30px;
+    }
+    
+    #click:checked ~ .hero::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 170vh;
+        background: rgba(0, 0, 0, 0.8);
+      }
+    .hero .main .menu li a{
+        font-size:25px;
+    }
+    
+
+    .about{
+        padding:30px
+    }
+    .about .abcon a{
+        font-size: 12px;
+    }
+
+    #services .ser{
+        grid-template-columns:1fr;
+        width: 100%;
+        padding:0px 30px;
+    }
+
+
+    .choose .info{
+        grid-template-columns: repeat(1,1fr);
+        gap:40px;
+    }
+
+
+
+    .newsletter .cont{
+        margin:10px;
+    }
+    .newsletter .subscribe input[type="email"]{
+        width:200px;  
+    }
+    .newsletter .subscribe input[type="submit"]{
+        position: relative;
+    }
+
+
+
+    .contact{
+        padding:20px;
+    }
+    .contact .details a{
+        
+        font-size: 20px;
+        
+    }
+    .contact .details .directcall{
+        padding-right: 15px;
+    }
+    .contact .main .map{
+        width: 100%;
+        padding:40px 0px;
+    }
+    .contact .main .map iframe{
+        display: none;
+    }
+}
